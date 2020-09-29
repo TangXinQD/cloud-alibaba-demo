@@ -1,0 +1,61 @@
+#spring:
+#  application:
+#    name: gateway
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: localhost:8848
+#        file-extension: yaml
+#        username: nacos
+#        password: nacos
+#        namespace: ce509382-f929-43ff-91e5-0d89b6ee8032
+server:
+  port: 8110
+  compression:
+    enabled: true
+    mime-types: application/json
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+        username: test
+        password: test
+        namespace: 5e907f32-3d83-45e5-8430-cd4df71818f7
+#      discovery:
+#        server-addr: localhost:8848
+#        group: demo
+#        username: test
+#        password: test
+#        namespace: 5e907f32-3d83-45e5-8430-cd4df71818f7
+#    gateway:
+#      enabled: true
+#      discovery:
+#        locator:
+#          lower-case-service-id: true
+#      routes:
+#        - id: nacos-config
+#          uri: lb://nacos-config
+#          predicates:
+#            - Path=/config/**
+#          filters:
+#            - StripPrefix=1
+#            - PrefixPath=/nacos-config
+#        - id: discovery
+#          uri: lb://discovery
+#          predicates:
+#            - Path=/discovery/**
+#          ilters:
+#            - StripPrefix=1
+#            - PrefixPath=/discovery
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: discovery
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+        username: nacos
+        password: nacos
+        namespace: ce509382-f929-43ff-91e5-0d89b6ee8032
+
+
+#        namespace: DEV
+
